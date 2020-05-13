@@ -12,7 +12,7 @@ function notification(text)
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "COMBAT SYSTEM";    --Name your script here!
 		Text = text;
-		Icon = "rbxassetid://407021953"; --put your own decal here
+		Icon = "rbxassetid://407021116"; --put your own decal here
 		Duration = 1;
 	})
 end
