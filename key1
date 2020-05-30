@@ -10,11 +10,11 @@ local newindex = meta.__newindex
 local index = meta.__index
 function notification(text)
 	game.StarterGui:SetCore("SendNotification", {
-		Title = "COMBAT SYSTEM";    --Name your script here!
-		Text = text;
-		Icon = "rbxassetid://407021116"; --put your own decal here
-		Duration = 1;
-	})
+    Title = "Vibin System";
+    Text = text;
+    Icon = "rbxassetid://4452245157";
+    Duration = 1;
+    })
 end
 meta.__namecall=function(self,...)
     if not checkcaller() then
