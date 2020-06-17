@@ -20,20 +20,6 @@ meta.__namecall=function(self,...)
     if not checkcaller() then
         local Args={...}
         local method = getnamecallmethod()
-        if method == "BreakJoints" and tostring(self) == game.Players.LocalPlayer.Character.Name then
-            return namecall(fakemodel,...)
-        end
-        if method == "FireServer" then 
-            if self.Name == "lIII" or tostring(self.Parent) == "ReplicatedStorage" then 
-                return wait(9e9)
-            end
-            if Args[1] == "hey" then 
-                return wait(9e9)
-            end
-        end
-        if method == "ClearAllChildren" or method == "Destroy" then 
-            return 
-        end 
         if string.lower(method) == "waitforchild" then
             if Args[1] == "HumanoidRootPart" then
                 if bypass then
