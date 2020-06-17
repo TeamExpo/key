@@ -84,17 +84,3 @@ mouse.KeyDown:Connect(function(key)
 		notification("bypass off!")
 		end
     end
-end)
-
-
-  	game.Players.LocalPlayer.Character:BreakJoints()
-    bypass = true
-		
-game:GetService('RunService').Stepped:connect(function()
-    if bypass then
-            local Root = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPartP")
-            if Root then
-                game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPartP").Parent = nil
-            end
-    end
-end)
