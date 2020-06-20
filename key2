@@ -2,7 +2,7 @@ PLAYER  = game.Players.LocalPlayer
 MOUSE   = PLAYER:GetMouse()
 CC      = game.Workspace.CurrentCamera
 
-ENABLED      = false
+ENABLED      = true
 ESP_ENABLED  = false
 
 _G.FREE_FOR_ALL = true
