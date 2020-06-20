@@ -7,7 +7,7 @@ ESP_ENABLED  = false
 
 _G.FREE_FOR_ALL = true
 
-_G.BIND        = 50
+_G.BIND        = 1007
 _G.ESP_BIND    = 52
 _G.CHANGE_AIM  = 'q'
 
