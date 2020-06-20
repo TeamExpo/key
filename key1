@@ -41,8 +41,7 @@ meta.__namecall=function(self,...)
         local method = getnamecallmethod()
         if string.lower(method) == "findfirstchild" then
             if Args[1] ~= nil then
-                if Args[1] == "HumanoidRootPartP" then
-                    Args[1] = "HumanoidRootPart"
+                if Args[1] == "HumanoidRootPart" then
                     return namecall(self,unpack(Args))
                 end
             end
@@ -92,9 +91,9 @@ end)
 		
 game:GetService('RunService').Stepped:connect(function()
     if bypass then
-            local Root = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPartP")
+            local Root = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
             if Root then
-                game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPartP").Parent = nil
+                game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Parent = nil
             end
     end
 end)
