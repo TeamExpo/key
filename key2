@@ -64,15 +64,7 @@ game:GetService("UserInputService").InputBegan:connect(function(input)
 end)
 
 game:GetService("UserInputService").InputEnded:connect(function(input)
-   if input.KeyCode == keybind then
-       hold=false
-       if enablepconsole then
-           rconsoleprint("\nreleased button")
-       end
-   end
-end)
-game:GetService("UserInputService").InputEnded:connect(function(input)
-   if input.KeyCode == keybind2 then
+   if input.KeyCode == keybind or keybind2 then
        hold=false
        if enablepconsole then
            rconsoleprint("\nreleased button")
