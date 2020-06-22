@@ -53,16 +53,6 @@ function getnearest()
    end
    return nearest
 end
-
-game:GetService("UserInputService").InputBegan:connect(function(input)
-   if input.KeyCode == keybind then
-       hold=true
-       if enablepconsole then
-           rconsoleprint("\npressed button")
-       end
-   end
-end)
-
 game:GetService("UserInputService").InputEnded:connect(function(input)
    if input.KeyCode == keybind or keybind2 then
        hold=false
