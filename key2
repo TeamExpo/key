@@ -2,7 +2,7 @@ local mouse = game:GetService("Players").LocalPlayer:GetMouse()
 local hold=false
 
 --settings
-local keybind=Enum.KeyCode.ButtonL2
+local keybind=Enum.KeyCode.R
 local enablepconsole=false
 local fov=250
 local teamcheck=true
